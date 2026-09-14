@@ -1,0 +1,39 @@
+.wrapper {
+	cursor: pointer;
+	position: relative;
+	width: fit-content;
+	height: fit-content;
+
+	&:hover .dialog {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.dialog {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -100%);
+
+	display: block;
+
+	margin: 0;
+
+	visibility: hidden;
+	opacity: 0;
+
+	transition:
+		opacity 0.3s ease,
+		visibility 0.3s ease;
+
+	&::after {
+		content: '';
+
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 50%) rotate(45deg);
+	}
+}

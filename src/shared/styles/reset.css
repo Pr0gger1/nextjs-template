@@ -1,0 +1,186 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	/* Сброс всех отступов, границ, установленных по умолчанию */
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	/* Многие HTML-элементы (например, <button>, <input>, <select>) имеют собственные системные шрифты, которые не наследуются от родителя */
+	font: inherit;
+
+	/* Разные браузеры задают для некоторых элементов свой стандартный размер шрифта (например, <small> или <button>) */
+	font-size: 100%;
+
+	/* По умолчанию некоторые встроенные элементы (img, input, button) могут выравниваться по середине строки или по другому ориентиру, что может сломать ровное расположение текста. */
+	vertical-align: baseline;
+}
+
+/* Убирает стандартные маркеры списков */
+ol,
+ul,
+menu,
+dir {
+	list-style: none;
+}
+
+/* Убирает стандартные кавычки у цитат */
+blockquote,
+q {
+	quotes: none;
+}
+
+/* Отключает автоматические кавычки, которые добавляют браузеры */
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: none;
+}
+
+/* Убирает отступы между ячейками и объединяет границы таблицы */
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+/* Общий сброс системного стиля кнопки */
+button {
+	width: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+
+	font: inherit;
+
+	line-height: normal;
+	color: inherit;
+
+	/* Сбрасывает системное оформление */
+	appearance: none;
+
+	background: transparent;
+
+	/* Убирает стандартный outline */
+	outline: none;
+}
+
+/* Убирает внутренние отступы и рамку у кнопок в Firefox */
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+/* Наследуем шрифты и убираем margin для единообразия */
+input,
+select,
+textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+/* Устанавливает overflow для совместимости */
+button,
+input {
+	overflow: visible;
+}
+
+/* Сбрасывает стандартное оформление ссылок */
+a,
+area {
+	color: inherit;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/* Отключает системное оформление, убирая встроенную кнопку очистки и внутренние padding/margin, которые браузер добавляет автоматически */
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	/* По умолчанию кнопка загрузки файлов в Safari/iOS имеет системный стиль, который ограничивает возможность её стилизации */
+	-webkit-appearance: button;
+
+	/* Safari по умолчанию может использовать свой встроенный шрифт для кнопки загрузки. */
+	font: inherit;
+}

@@ -1,0 +1,114 @@
+:root {
+	--h1: 7.5rem;
+	--h2: 6.25rem;
+	--h3: 4.5rem;
+	--h4: 2.25rem;
+	--h5: 1.5rem;
+	--text: 1.125rem;
+	--button-text: 1.125rem;
+	--menu-item: 1rem;
+	--additional-text: 1rem;
+	--small-text: 0.875rem;
+	
+	--h1-lh: 1.03;
+	--h2-lh: 1.05;
+	--h3-lh: 1.03;
+	--h4-lh: 1.05;
+	--h5-lh: 1.17;
+	--text-lh: 1.44;
+	--button-text-lh: 1.33;
+	--menu-item-lh: 1;
+	--additional-text-lh: 1.375;
+	--small-text-lh: 1.14;
+
+	@media (min-width: 1024px) and (max-width: 1440px) {
+		--h1: clamp(6.25rem, 3.173076923076923rem + 4.807692307692308vw, 7.5rem);
+		--h2: clamp(5rem, 1.923076923076923rem + 4.807692307692308vw, 6.25rem);
+		--h3: clamp(3.125rem, -0.259615384615385rem + 5.288461538461539vw, 4.5rem);
+		--h4: clamp(1.75rem, 0.5192307692307692rem + 1.9230769230769231vw, 2.25rem);
+		--h5: clamp(1.25rem, 0.6346153846153846rem + 0.9615384615384616vw, 1.5rem);
+		--text: clamp(1rem, 0.6923076923076923rem + 0.4807692307692308vw, 1.125rem);
+		--button-text: clamp(
+			1rem,
+			0.6923076923076923rem + 0.4807692307692308vw,
+			1.125rem
+		);
+		--menu-item: clamp(
+			0.94rem,
+			0.7923076923076922rem + 0.230769230769231vw,
+			1rem
+		);
+		--additional-text: 1rem;
+		--small-text: clamp(
+			0.813rem,
+			0.6603846153846151rem + 0.2384615384615387vw,
+			0.875rem
+		);
+		--h1-lh: 1.05;
+		--h2-lh: 1.0375;
+		--h3-lh: 1.04;
+		--h4-lh: 1.14;
+		--h5-lh: 1.2;
+		--text-lh: 1.25;
+		--button-text-lh: 1.25;
+		--menu-item-lh: 1;
+		--additional-text-lh: 1.375;
+		--small-text-lh: 1.15;
+	}
+
+	@media (max-width: 1023px) {
+		--h1: clamp(3.75rem, 2.303240740740741rem + 6.172839506172839vw, 6.25rem);
+		--h2: clamp(3.125rem, 2.0399305555555554rem + 4.62962962962963vw, 5rem);
+		--h3: clamp(2.5rem, 2.138310185185185rem + 1.5432098765432098vw, 3.125rem);
+		--h4: clamp(1.25rem, 0.9606481481481481rem + 1.2345679012345678vw, 1.75rem);
+		--h5: clamp(
+			1.125rem,
+			1.052662037037037rem + 0.30864197530864196vw,
+			1.25rem
+		);
+		--text: clamp(0.94rem, 0.9052777777777777rem + 0.14814814814814828vw, 1rem);
+		--button-text: clamp(
+			0.94rem,
+			0.9052777777777777rem + 0.14814814814814828vw,
+			1rem
+		);
+		--menu-item: clamp(
+			0.875rem,
+			0.8373842592592593rem + 0.16049382716049368vw,
+			0.94rem
+		);
+		--additional-text: clamp(
+			0.94rem,
+			0.9052777777777777rem + 0.14814814814814828vw,
+			1rem
+		);
+		--small-text: clamp(
+			0.75rem,
+			0.7135416666666667rem + 0.15555555555555542vw,
+			0.813rem
+		);
+		--h1-lh: 1;
+		--h2-lh: 1.12;
+		--h3-lh: 1;
+		--h4-lh: 1.15;
+		--h5-lh: 1.22;
+		--text-lh: 1.47;
+		--button-text-lh: 1.12;
+		--menu-item-lh: 1;
+		--additional-text-lh: 1.47;
+		--small-text-lh: 1.33;
+	}
+
+	@media screen and (min-width: 1441px) {
+		--h1: calc(7.5rem + (0.048 * (100vw - 90rem)));
+		--h2: calc(6.25rem + (0.048 * (100vw - 90rem)));
+		--h3: calc(4.5rem + (0.0528 * (100vw - 90rem)));
+		--h4: calc(2.25rem + (0.0192 * (100vw - 90rem)));
+		--h5: calc(1.5rem + (0.0096 * (100vw - 90rem) * 1.25));
+		--text: calc(1.125rem + (0.0048 * (100vw - 90rem) * 1.5625));
+		--menu-item: calc(1rem + (0.0048 * (100vw - 90rem) * 1.5625));
+		--additional-text: calc(1rem + (0.0048 * (100vw - 90rem) * 1.5625));
+		--button-text: calc(1.125rem + (0.0048 * (100vw - 90rem) * 1.5625));
+		--small-text: calc(0.875rem + (0.0048 * (100vw - 90rem) * 1.5625));
+	}
+}

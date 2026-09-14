@@ -1,0 +1,70 @@
+@define-mixin h1 {
+	font-size: var(--h1);
+	font-weight: 400;
+	line-height: var(--h1-line-height);
+	letter-spacing: var(--h1-letter-spacing);
+}
+
+@define-mixin h2 {
+	font-size: var(--h2);
+	font-weight: 400;
+	line-height: var(--h2-line-height);
+	letter-spacing: var(--h2-letter-spacing);
+}
+
+@define-mixin h3 {
+	font-size: var(--h3);
+	font-weight: 400;
+	line-height: var(--h3-line-height);
+	letter-spacing: var(--h3-letter-spacing);
+}
+
+@define-mixin h4 {
+	font-size: var(--h4);
+	font-weight: 400;
+	line-height: var(--h4-line-height);
+	letter-spacing: var(--h4-letter-spacing);
+}
+
+@define-mixin h5 {
+	font-size: var(--h5);
+	font-weight: 400;
+	line-height: var(--h5-line-height);
+	letter-spacing: var(--h5-letter-spacing);
+}
+
+@define-mixin h6 {
+	font-size: var(--h6);
+	font-weight: 400;
+	line-height: var(--h6-line-height);
+	letter-spacing: var(--h6-letter-spacing);
+}
+
+@define-mixin xl {
+	font-size: var(--xl);
+	font-weight: 400;
+	line-height: var(--xl-line-height);
+	letter-spacing: var(--xl-letter-spacing);
+}
+
+@define-mixin l {
+	font-size: var(--l);
+	font-weight: 500;
+	line-height: var(--l-line-height);
+	text-transform: uppercase;
+	letter-spacing: var(--l-letter-spacing);
+}
+
+@define-mixin m {
+	font-size: var(--m);
+	font-weight: 400;
+	line-height: var(--m-line-height);
+	letter-spacing: var(--m-letter-spacing);
+}
+
+@define-mixin s {
+	font-size: var(--s);
+	font-weight: 400;
+	line-height: var(--s-line-height);
+	letter-spacing: var(--s-letter-spacing);
+}

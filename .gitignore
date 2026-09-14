@@ -1,0 +1,36 @@
+# dependencies
+node_modules
+cache
+
+# misc
+.DS_Store
+Thumbs.db
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# other rule
+*.bin
+*.env
+*.map
+*.log
+.env
+.env.development
+.env.production
+.env.local
+certificates
+
+.docker-sync
+/.pnp
+.pnp.js
+**/.pnpm-store/*
+.next
+**/*.env
+.vs
+.idea
+
+# Tsc
+tsconfig.tsbuildinfo
+**/tsconfig.tsbuildinfo
+jsconfig.json

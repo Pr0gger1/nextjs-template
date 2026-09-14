@@ -1,0 +1,25 @@
+/* prettier-ignore */
+
+@define-mixin responsive $property, $mobile, $tablet, $desktop {
+	$(property): $(mobile)px;
+
+	@media (min-width: $(mobile-min)) {
+		$(property): calc(
+			$(mobile)px +
+			($(tablet) - $(mobile)) *
+			((100vw - 375px) / (768 - 375))
+		);
+	}
+
+	@media (min-width: $(tablet-min)) {
+		$(property): calc(
+			$(tablet)px +
+			($(desktop) - $(tablet)) *
+			((100vw - 768px) / (1440 - 768))
+		);
+	}
+
+	@media (min-width: $(big-screen)) {
+		$(property): $(desktop)px;
+	}
+}

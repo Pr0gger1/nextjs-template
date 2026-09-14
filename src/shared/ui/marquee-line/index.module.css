@@ -1,0 +1,32 @@
+.root,
+.leftPart,
+.rightPart {
+	white-space: nowrap;
+	display: flex;
+}
+.leftPart,
+.rightPart {
+	align-items: center;
+}
+.leftPart {
+	animation: marqueNear infinite linear;
+}
+.rightPart {
+	animation: marqueFurther infinite linear;
+}
+@keyframes marqueNear {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+@keyframes marqueFurther {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translateX(-200%);
+	}
+}

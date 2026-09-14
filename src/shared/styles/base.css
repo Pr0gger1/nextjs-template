@@ -1,0 +1,14 @@
+button,
+a {
+	cursor: pointer;
+}
+
+picture,
+img {
+	display: block;
+}
+
+textarea {
+	resize: none;
+	overflow: auto;
+}

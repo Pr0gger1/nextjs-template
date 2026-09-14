@@ -1,0 +1,9 @@
+:root {
+	--mobile-scale: calc(
+		((100vw - $(mobile-min)) / ($(tablet-min) - $(mobile-min)))
+	);
+	--tablet-scale: calc(
+		(100vw - $(tablet-min)) / ($(big-screen) - $(tablet-min))
+	);
+	--big-screen-scale: calc((100vw - $(big-screen)) / 100);
+}

@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+LOCK_DIR="src"
+
+echo "🔍 Переход в директорию $LOCK_DIR..."
+cd "$LOCK_DIR" || { echo "❌ Не удалось перейти в $LOCK_DIR" && exit 1; }
+
+echo "🔍 Проверка: существует ли pnpm-lock.yaml..."
+if [ ! -f pnpm-lock.yaml ]; then
+	echo "❌ Файл pnpm-lock.yaml не найден в $LOCK_DIR. Отмена пуша."
+	exit 1
+fi
+
+echo "🔍 Запуск pnpm audit..."
+if ! pnpm audit --audit-level=low; then
+	echo "🚫 Найдены уязвимости. Пуш отменён."
+	exit 1
+fi
+
+echo "✅ Уязвимостей не найдено."
+
+echo "🔍 Проверка build..."
+if ! pnpm build; then
+	echo "🚫 Сборка завершилась с ошибкой. Пуш отменён."
+	exit 1
+fi
+
+echo "✅ Собралось успешно."

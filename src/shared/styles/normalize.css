@@ -1,0 +1,121 @@
+/* Использовать блочную модель */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	-o-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* Сделать семантические элементы блочными, так как некоторые браузеры отображают их как inline по умолчанию */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main,
+img {
+	display: block;
+}
+
+html {
+	/* Улучшить согласованность шрифтов по умолчанию во всех браузерах. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+	font-family:
+		system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji';
+
+	/* Исправить высоту строки во всех браузерах. */
+	line-height: 1.15;
+
+	/* Предотвратить изменение размера шрифта после изменения ориентации в iOS. */
+	text-size-adjust: 100%;
+}
+
+/* Добавить правильную толщину шрифта в Chrome и Safari. */
+b,
+strong {
+	font-weight: bolder;
+}
+
+/* Предотвратить влияние элементов «sub» и «sup» на высоту строки во всех браузерах. */
+sub,
+sup {
+	line-height: 0;
+	vertical-align: baseline;
+}
+
+/* Добавьте правильное вертикальное выравнивание в Chrome и Firefox. */
+progress {
+	vertical-align: baseline;
+}
+
+/* Исправлено наследование цвета границ таблиц в Chrome и Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016) */
+table {
+	border-color: currentcolor;
+}
+
+code,
+kbd,
+samp,
+pre {
+	/* Улучшить согласованность шрифтов по умолчанию во всех браузерах. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+	font-family:
+		ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+
+	/* Исправить некорректный размер шрифта во всех браузерах. */
+	font-size: 1rem;
+}
+
+/* Без этого свойства Safari иногда игнорирует большинство пользовательских CSS-стилей для этих элементов: например, background-color, border-radius, padding. */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	appearance: auto;
+}
+
+/* В Safari эти кнопки иногда отображаются с неправильной высотой, из-за чего курсор или кликабельная область ведут себя странно */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type='search'] {
+	/* Исправьте странный внешний вид в Chrome и Safari. */
+	appearance: textfield;
+
+	/* Исправьте стиль контура в Safari. */
+	outline-offset: -2px;
+}
+
+/* Добавьте правильное отображение в Chrome и Safari. */
+summary {
+	display: list-item;
+
+	&::-webkit-details-marker {
+		display: none;
+	}
+}
+
+button {
+	/* у некоторых браузеров кнопка имеет hidden. */
+	overflow: visible;
+
+	/* Поддержка сглаживания шрифтов в WebKit */
+	-webkit-font-smoothing: inherit;
+
+	/* Поддержка сглаживания шрифтов в Firefox на macOS */
+	-moz-osx-font-smoothing: inherit;
+}

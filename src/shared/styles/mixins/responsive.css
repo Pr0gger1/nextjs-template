@@ -1,0 +1,13 @@
+/* prettier-ignore */
+
+@define-mixin responsive $property, $mobile-size, $tablet-size, $desktop-size {
+	$(property): calc($(desktop-size)rem / $desktop-scale-factor);
+
+	@media (max-width: $tablet) {
+		$(property): calc($(tablet-size)rem / $tablet-scale-factor);
+	}
+
+	@media (max-width: $mobile) {
+		$(property): calc($(mobile-size)rem / $mobile-scale-factor);
+	}
+}

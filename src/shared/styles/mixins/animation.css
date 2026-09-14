@@ -1,0 +1,29 @@
+/**
+ * @mixin transition
+ * Добавляет CSS-переход для указанного свойства.
+ *
+ * @param {String} $property - Целевое CSS-свойство (например, opacity, transform).
+ * @param {String} [$duration=0.3s] - Длительность перехода.
+ *
+ * @example
+ * @mixin transition background-color;
+ * @mixin transition opacity, 0.5s;
+ */
+@define-mixin transition $property, $duration: 0.3s {
+	transition: $property $duration var(--move-in-screen);
+}
+
+/**
+ * @mixin transitionOptions
+ * Настраивает параметры перехода — функцию плавности и длительность.
+ *
+ * @param {String} [$duration=0.3s] - Длительность перехода.
+ *
+ * @example
+ * @mixin transitionOptions;
+ * transition-property: width, height, opacity;
+ */
+@define-mixin transitionOptions $duration: 0.3s {
+	transition-timing-function: var(--move-in-screen);
+	transition-duration: $duration;
+}

@@ -1,0 +1,78 @@
+/* Типографика сайта */
+
+:root {
+	/* font-size */
+	--h1: 5.278rem; /* 76px */
+	--h2: 4.167rem; /* 60px */
+	--h3: 3.472rem; /* 50px */
+	--h4: 2.778rem; /* 40px */
+	--h5: 2.083rem; /* 30px */
+	--h6: 1.667rem; /* 24px */
+	--xl: 1.389rem; /* 20px */
+	--l: 1.25rem; /* 18px */
+	--m: 1.111rem; /* 16px */
+	--s: 0.972rem; /* 14px */
+
+	/* line-height */
+	--h1-line-height: 0.87;
+	--h2-line-height: 0.8;
+	--h3-line-height: 1.32;
+	--h4-line-height: 1.2;
+	--h5-line-height: 1.47;
+	--h6-line-height: 1.5;
+	--xl-line-height: 1.6;
+	--l-line-height: 1;
+	--m-line-height: 1.63;
+	--s-line-height: 1.71;
+
+	/* letter-spacing */
+	--h1-letter-spacing: -0.04;
+	--h2-letter-spacing: -0.04;
+	--h3-letter-spacing: -0.04;
+	--h4-letter-spacing: -0.04;
+	--h5-letter-spacing: -0.04;
+	--h6-letter-spacing: -0.04;
+	--xl-letter-spacing: 0;
+	--l-letter-spacing: 0.04;
+	--m-letter-spacing: 0;
+	--s-letter-spacing: 0;
+
+	@media (max-width: $tablet) {
+		--h1: 7.422rem; /* 76px */
+		--h2: 5.859rem; /* 60px */
+		--h3: 4.883rem; /* 50px */
+		--h4: 3.906rem; /* 40px */
+		--h5: 2.93rem; /* 30px */
+		--h6: 2.344rem; /* 24px */
+		--xl: 1.953rem; /* 20px */
+		--l: 1.758rem; /* 18px */
+		--m: 1.563rem; /* 16px */
+		--s: 1.367rem; /* 14px */
+	}
+
+	@media (max-width: $mobile) {
+		/* font-size */
+		--h1: 16rem; /* 60px */
+		--h2: 10.667rem; /* 40px */
+		--h3: 8rem; /* 30px */
+		--h4: 8rem; /* 30px */
+		--h5: 5.333rem; /* 20px */
+		--h6: 4.8rem; /* 18px */
+		--xl: 3.733rem; /* 14px */
+		--l: 3.733rem; /* 14px */
+		--m: 3.2rem; /* 12px */
+		--s: 3.2rem; /* 12px */
+
+		/* line-height */
+		--h1-line-height: 0.9;
+		--h2-line-height: 0.95;
+		--h3-line-height: 1.33;
+		--h4-line-height: 1.33;
+		--h5-line-height: 1.5;
+		--h6-line-height: 1.44;
+		--xl-line-height: 1.57;
+		--l-line-height: 1;
+		--m-line-height: 1.66;
+		--s-line-height: 1.66;
+	}
+}

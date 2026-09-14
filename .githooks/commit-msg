@@ -1,0 +1,4 @@
+#!/bin/sh
+
+./src/node_modules/.bin/commitlint --config ./src/commitlint.config.js --verbose --help-url "https://docs.google.com/document/d/1LaAta2Vr2BVA1wX9t0b0ShJBuS_Kn2LSeI-_lL5AHSg/edit?tab=t.0#heading=h.8tbu74yv2htw" --edit "$1"
+
